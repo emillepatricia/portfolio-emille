@@ -554,7 +554,7 @@ svg {
 
 /*=============== FOOTER ===============*/
 .footer{
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   padding-block: 3.5rem 2rem;
 }
 

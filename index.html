@@ -410,32 +410,20 @@
         </div>
       </section> -->
 
-      <section id="contact" class="main style style3 secondary">
+      <section id="contact" class="contact section">
         <div class="content">
-          <header>
-            <h2>Diga um Oi ::</h2>
-            <p>Envie mensaegns para contatos de trabalho ou qualquer outra dúvida.</p>
-          </header>
-          <div class="box">
-            <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-              </p>
-              <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Your Role: <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
+          <h3 class="section__subtitle">Entrar em  <span>contato</span></h3>
+          <h2 class="section__title2 section__title">
+            Contate-me
+          </h2>
+          <div class="contact__container container grid box">
+            <form class="contact__form" name="contact" method="POST" data-netlify="true">
+              <div class="contact__group">
+                <input type="text" name="name" class="contact__input" placeholder="Nome" required/>
+                <input type="email" name="email" class="contact__input" placeholder="E-mail"  required/>
+              </div>
+            <textarea name="message" class="contact__input" placeholder="Digite aqui sua mensagem" required></textarea>
+            <button type="submit" class="button contact__button">Enviar Mensagem</button>
             </form>
           </div>
         </div>

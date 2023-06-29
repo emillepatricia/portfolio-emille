@@ -390,25 +390,44 @@
 
       <!--==================== CONTACT ====================-->
       <!-- <section class="contact section" id="contact">
-           <h3 class="section__subtitle">
-               Entrar em  <span>contato</span>
-           </h3>
-           <h2 class="section__title2 section__title">
-               Contate-me
-           </h2>
-           <div class="contact__container container grid">
-               <form action="https://formsubmit.co/emillepatricia.d@hotmail.com" method="POST" class="contact__form" >
-                   <div class="contact__group">
-                       <input type="text" name="name" class="contact__input" placeholder="Nome" required>
-                       <input type="email" name="email" class="contact__input" placeholder="E-mail"  required>
-                   </div>
-                   <textarea name="message" id="message" class="contact__input" placeholder="Digite aqui sua mensagem" required></textarea>
-                   <input type="hidden" name="_captcha" value="false">
-                   <input type="hidden" name="_next" value="http://127.0.0.1:5503/obrigado.html">
-                   <button type="submit" class="button contact__button">Enviar mensagem</button>
-               </form>
-           </div>
-        </section> -->
+        <h3 class="section__subtitle">
+            Entrar em  <span>contato</span>
+        </h3>
+        <h2 class="section__title2 section__title">
+            Contate-me
+        </h2>
+        <div class="contact__container container grid">
+            <form method="POST" name="contact" class="contact__form" netlify>
+                <div class="contact__group">
+                    <input type="text" name="name" class="contact__input" placeholder="Nome" required>
+                    <input type="email" name="email" class="contact__input" placeholder="E-mail"  required>
+                </div>
+                <textarea name="message" id="message" class="contact__input" placeholder="Digite aqui sua mensagem" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://portifólio-emille.netlify.app/obrigado.html">
+                <button type="submit" class="button contact__button">Enviar mensagem</button>
+            </form>
+        </div>
+      </section> -->
+
+      <section id="contact" class="main style style3 secondary">
+        <div class="content">
+          <header>
+            <h2>Diga um Oi</h2>
+            <p>Envie mensaegns para contatos de trabalho ou qualquer outra dúvida.</p>
+          </header>
+          <div class="box">
+            <form method="post" name="contact" netlify>
+              <div class="field half first"><input type="text" name="name" placeholder="Nome"></div>
+              <div class="field half"><input type="email" name="email" placeholder="Email"></div>
+              <div class="field"><textarea name="message" placeholder="Mensagem" rows="6"></textarea></div>
+              <ul class="actions">
+                <li><input type="submit" value="Enviar Mensagem"></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
